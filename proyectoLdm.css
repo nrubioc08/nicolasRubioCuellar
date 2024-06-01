@@ -1,0 +1,650 @@
+/* General */
+
+body{
+    margin: 0px;
+    font-family: arial;
+    background-color: #eee;
+}
+header{
+    background-color: #2A6DCA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 10px solid #000;
+}
+header a{
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.1s ease-in;
+}
+header a:hover{
+    color: #000;
+}
+img.logoNbaHeader{
+    width: 180px;
+    height: 100px;
+    padding-right: 10px;
+}
+
+nav.cabeza ul{
+    margin: 0px;
+    padding: 10px;
+}
+nav.cabeza li{
+    display: inline-block;
+    padding-left: 20px;
+    transition: all 0.2s ease-in;
+}
+nav.cabeza li:hover{
+    transform: scale(1.2);
+}
+li.desplegable{
+    position: relative;
+    margin: 10px;
+}
+div.desplegableContenido {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+li.desplegable:hover div.desplegableContenido{
+    display: block;
+    background-color: #2A6DCA;
+    padding: 10px;
+}
+footer{
+    background-color: #2A6DCA;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-top: 10px solid #000;
+}
+img.footerLogo{
+    width: 250px;
+    height: auto;
+}
+img.footerRRSS{
+    width: 70px;
+    height: 70px;
+    margin: 0px 30px;
+}
+
+/* Index */
+
+div.i_bloquePrincipal{
+    display: flex;
+}
+main.index{
+    width: 70%;
+    box-sizing: border-box;
+}
+aside.index2{
+    background-color: #424242;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 10px;
+    border: 5px solid #F1C40F;
+    border-radius: 5px;
+    z-index: 1;
+    position: relative;
+
+}
+aside.index2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://i.pinimg.com/originals/bc/f2/ec/bcf2ece7d5f401b9ace8827277802c92.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+main.index h1{
+    color: #2A6DCA;
+    margin-left: 20px;
+    font-size: 50px;
+}
+img.i_noticia{
+    width: 550px;
+    height: 350px;
+    border-radius: 5px;
+}
+main.index article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 20px;
+    padding: 30px;
+    border-top: 2px solid #2A6DCA;
+    border-bottom: 2px solid #F00;
+    background-color: #FFF;
+}
+main.index article div{
+    width: 50%;
+}
+div.i_cuerpoNoticia{
+    width: 60%;
+}
+aside.index2 h1{
+    color: #F1C40F;
+    font-size: 35px;
+    text-align: center;
+}
+div.i_partidos{
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+    margin: 60px 0px;
+    opacity: 0.9;
+}
+img.i_escudoEquipo{
+    width: 100px;
+    height: 100px;
+}
+td.i_tdEscudo{
+    width: 110px;
+}
+div.i_partidos table{
+    width: 100%;
+    font-size: 25px;
+}
+div.i_partidos p{
+    text-align: center;
+}
+div.i_partidos a{
+    text-decoration: none;
+    color: #F1C40F;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: border 0.25s ease-in;
+}
+div.i_partidos a:hover{
+    border: 1px solid #F1C40F;
+}
+td.i_separadorResultados{
+    text-align: center;
+}
+td.i_resultados{
+    width: 45px;
+    text-align: end;
+}
+tr.i_ganadores{
+    font-weight: bolder;
+}
+div.i_equipos,div.i_resultados{
+    display: flex;
+    justify-content:space-around;
+    width: 80%;
+    text-align: center;
+}
+
+/* Clasificacion */
+
+h2.c_top5{
+    text-align: center;
+}
+nav.c_seleccion li{
+    display: inline-block;
+    padding: 16px;
+    margin: 10px;
+    font-size: larger;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 0px 0px #000;
+    background-color: #FFF;
+}
+nav.c_seleccion li:hover{
+    background-color: #424242;
+    border-color: #F1C40F;
+    box-shadow: 0px 0px 8px #BDBDBD;
+}
+nav.c_seleccion li.c_seleccionado{
+    background-color: #424242;
+    border-color: #F1C40F;
+    box-shadow: 0px 0px 8px #BDBDBD;
+}
+nav.c_seleccion li.c_seleccionado a{
+    color: #F1C40F;
+}
+nav.c_seleccion a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+nav.c_seleccion a:hover{
+    color: #F1C40F;
+}
+div.c_liga{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.c_liga table{
+    border-collapse: collapse;
+    margin: 30px;
+    background-color: #FFF;
+}
+div.c_liga table.c_conferenciaOeste th{
+    color: #fff;
+    background-color: #F44336;
+    border: 2px solid #000;
+    padding: 20px;
+    font-size: 25px;
+}
+div.c_liga table.c_conferenciaEste th{
+    color: #fff;
+    background-color: #2A6DCA;
+    border: 2px solid #000;
+    padding: 20px;
+    font-size: 25px;
+}
+div.c_liga td{
+    padding: 15px;
+    border: 2px solid #000;
+}
+td.c_escudoEquipo img{
+    width: 50px;
+    height: 50px;
+}
+td.victoriasLiga,td.derrotasLiga,td.c_jugadorFranquiciaPts,td.c_jugadorFranquiciaReb,td.c_jugadorFranquiciaAst{
+    text-align: end;
+}
+td.c_nombreEquipo{
+    width: 200px;
+}
+td.c_jugadorFranquicia{
+    width: 200px;
+}
+td.c_jugadorFranquicia a{
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+td.c_jugadorFranquicia a:hover{
+    color: #FFF;
+}
+td.c_victoriasLiga{
+    background-color: #27AE60;
+}
+td.c_derrotasLiga{
+    background-color: #F00;
+}
+div.c_completo{
+    text-align: center;
+}
+div.c_completo a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+div.c_completo a:hover{
+    color: #F44336;
+}
+
+div.c_equipoFavorito{
+    text-align: center;
+    margin: 30px;
+}
+div.c_equipoFavorito button{
+    margin: 10px;
+    color: #FFF;
+    background-color: #2A6DCA;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+}
+div.c_equipoFavorito button:hover{
+    color: #FFF;
+    background-color: #F44336;
+}
+/* In-season tournament*/
+
+div.c_in-season-tournament{
+    background-color: #424242;
+    border: 10px solid #F1C40F;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 80px;
+    height: 600px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+div.c_in-season-tournament::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://de1.sportal365images.com/process/smp-bet365-images/news.nj.bet365.com-us-en/11122023/c8197958-860c-491b-8667-c5cca2ea6d82.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+div.c_in-season-tournament div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+div.c_in-season-tournament table{
+    border: 3px solid #000;
+    margin: 20px;
+    border-collapse: collapse;
+    font-weight: bolder;
+}
+div.c_in-season-tournament td{
+    padding: 10px;
+}
+div.c_perdedor{
+    opacity: 0.5;
+}
+
+/* Play-offs */
+div.c_play-off{
+    background-color: #424242;
+    border: 10px solid #F1C40F;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 80px;
+    height: 800px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+div.c_play-off::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://cdn.milenio.com/uploads/media/2022/06/09/llama-larry-brien-trofeo-nba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+div.c_play-off div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 14.29%;
+}
+div.c_play-off table{
+    border: 3px solid #000;
+    margin: 20px;
+    border-collapse: collapse;
+    font-weight: bolder;
+}
+div.c_play-off td{
+    padding: 10px;
+}
+div.c_final{
+    height: 650px;
+    display: flex;
+    align-content: flex-start;
+}
+div.c_final h1{
+    color: #F1C40F;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+div.c_semis-conferencia{
+    height: 800px;
+    display: flex;
+    align-content: space-around;
+}
+
+/* Equipos */
+
+.c_Lakers{
+    color: #552583;
+    background-color: #FDB927;
+}
+.c_Pelicans{
+    color: #0C2340;
+    background-color: #C8102E;
+}
+.c_Suns{
+    color: #E56020;
+    background-color: #1D1160;
+}
+.c_Kings{
+    color: #63727A;
+    background-color: #5A2D81;
+}
+.c_Thunder{
+    color: #EF3B24;
+    background-color: #007AC1;
+}
+.c_Clippers{
+    color: #1D428A;
+    background-color: #C8102E;
+}
+.c_Mavericks{
+    color: #B8C4CA;
+    background-color: #002B5E;
+}
+.c_Timberwolves{
+    color: #78BE20;
+    background-color: #236192;
+}
+.c_Nuggets{
+    color: #FEC524;
+    background-color: #0E2240;
+}
+
+.c_Pacers{
+    color: #FDBB30;
+    background-color: #002D62;
+}
+.c_Celtics{
+    color: #FFF;
+    background-color: #007A33;
+}
+.c_Bucks{
+    color: 	#EEE1C6;
+    background-color: 	#00471B;
+}
+.c_Knicks{
+    color: #F58426;
+    background-color: #006BB6;
+}
+.c_Heat{
+    color: #98002E;
+    background-color: #111111;
+}
+.c_Cavaliers{
+    color: #FDBB30;
+    background-color: #860038;
+}
+.c_Magic{
+    color: #C4CED4;
+    background-color: #0077C0;
+}
+.c_76ers{
+    color: #006BB6;
+    background-color: #ED174C;
+}
+
+/* Premios */
+
+div.c_clasificacion-premios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.c_clasificacion-premios div{
+    width: 80%;
+    margin: 20px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+li.c_ganador-premio{
+    color: #F1C40F;
+}
+
+/* Mejores Jugadas */
+
+div.h_highlights{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.h_highlights h1{
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+div.h_highlights div{
+    width: 35%;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    margin: 30px;
+}
+
+/* Otras Ligas */
+
+div.l_ligas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.l_ligas div{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px
+}
+div.l_ligas h1{
+    width: 31%;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 30px 0px;
+}
+div.l_ligas a{
+    width: 90%;
+    text-align: center;
+}
+div.l_ligas img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* eSports */
+
+header.e_head{
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 10px solid #F00;
+}
+img.logo2kHeader{
+    width: 250px;
+    height: 80px;
+    padding-right: 10px;
+}
+nav.e_cabeza ul{
+    margin: 0px;
+    padding: 10px;
+}
+header.e_head a{
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.1s ease-in;
+}
+header.e_head a:hover{
+    color: #F00;
+}
+nav.e_cabeza li{
+    display: inline-block;
+    padding-left: 20px;
+    transition: all 0.2s ease-in;
+}
+nav.e_cabeza li:hover{
+    transform: scale(1.2);
+}
+div.e_desplegableContenido {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+li.desplegable:hover div.e_desplegableContenido{
+    display: block;
+    background-color: #111;
+    padding: 10px;
+}
+
+main.e_general{
+    width: 90%;
+    margin: auto;
+}
+
+footer.e_foot{
+    background-color: #111;
+    color: #FFF;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #F00;
+}
+
+div.e_videojuegos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+div.e_videojuegos img{
+    width: 400px;
+    height: 400px;
+}
+div.e_videojuegos h1{
+    text-align: center;
+}
+div.e_videojuegos a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+div.e_videojuegos a:hover{
+    color: #F00;
+}
+details{
+    padding: 20px;
+    width: 400px;
+}
+summary{
+    font-weight: bold;
+}
